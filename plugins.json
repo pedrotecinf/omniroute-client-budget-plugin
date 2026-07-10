@@ -1,0 +1,16 @@
+[
+  {
+    "name": "client-budget",
+    "version": "1.0.0",
+    "description": "Per-client budget enforcement and quota tracking. Blocks requests when limits exceeded. Sends Telegram alerts.",
+    "author": "Pedro Augusto",
+    "license": "MIT",
+    "downloadUrl": "https://github.com/pedrotecinf/omniroute-client-budget-plugin/archive/refs/heads/main.zip",
+    "repository": "https://github.com/pedrotecinf/omniroute-client-budget-plugin",
+    "tags": ["budget", "quota", "billing", "multi-tenant", "cost-control"],
+    "downloads": 0,
+    "rating": 5,
+    "verified": false,
+    "lastUpdated": "2026-07-10"
+  }
+]
