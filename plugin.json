@@ -1,0 +1,36 @@
+{
+  "name": "client-budget",
+  "version": "1.0.0",
+  "description": "Per-client budget enforcement and quota tracking. Blocks requests when limits exceeded.",
+  "author": "Pedro Augusto",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "source": "local",
+  "tags": ["budget", "quota", "billing", "multi-tenant"],
+  "requires": {
+    "omniroute": ">=1.8.0",
+    "permissions": ["file-read", "file-write", "network"]
+  },
+  "hooks": {
+    "onRequest": true,
+    "onResponse": true,
+    "onError": true
+  },
+  "skills": [
+    {
+      "name": "client-budget-status",
+      "description": "Returns current budget and quota usage for all clients"
+    },
+    {
+      "name": "client-budget-reset",
+      "description": "Resets usage counters for a specific client"
+    }
+  ],
+  "enabledByDefault": false,
+  "configSchema": {
+    "clients": {
+      "type": "string",
+      "description": "Path to clients.json config file (default: data/clients.json)"
+    }
+  }
+}
