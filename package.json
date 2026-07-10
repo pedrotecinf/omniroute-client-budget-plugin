@@ -1,0 +1,9 @@
+{
+  "name": "client-budget",
+  "version": "1.0.0",
+  "description": "Per-client budget enforcement and quota tracking for OmniRoute",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  }
+}
